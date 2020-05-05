@@ -15,9 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view){
-        EditText editText =(EditText) findViewById(R.id.edit_message);
+        EditText editTextA =(EditText) findViewById(R.id.edit_message_a);
+        EditText editTextB =(EditText) findViewById(R.id.edit_message_b);
         TextView textView = (TextView) findViewById(R.id.view_message);
-        String message = editText.getText().toString();
-        textView.setText(message);
+        String message = String.valueOf(Integer.parseInt(editTextA.getText().toString()) + Integer.parseInt(editTextB.getText().toString()));
+        textView.setText( message);
     }
 }

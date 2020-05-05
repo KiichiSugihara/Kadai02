@@ -6,15 +6,21 @@
     android:orientation="vertical"
     >
     <EditText
-        android:id="@+id/edit_message"
+        android:id="@+id/edit_message_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter a msessage"
+        android:hint="Enter numberA"
+        />
+    <EditText
+        android:id="@+id/edit_message_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter numberB"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send"
+        android:text="＋"
         android:onClick="sendMessage"
         />
     <TextView  android:id="@+id/view_message"
